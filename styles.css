@@ -1,0 +1,193 @@
+/* Reset all elements  */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* HTML  */
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+
+/* Body  */
+
+body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    display: block;
+}
+
+/* Navigation Bar  */
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    background-color: #141616;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    color: #8e8e8e;
+
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    margin: 8px 14px;
+    display: block;
+    padding: 4px 18px;
+    color: #8e8e8e;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #3e3e3f;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+#navbar a:hover {
+    border: 1px solid #757575;
+
+}
+
+/* Logo  */
+
+#logo {
+    width: 30px;
+    height: auto;
+    margin-left: 14px;
+}
+
+/* Page title  */
+
+#page-title {
+    margin: 8px auto;
+    padding: 2px;
+    margin-bottom: 30px;
+}
+
+#title {
+    color: #dfdede;
+    margin: 2px 8px;
+    font-size: 2em;
+    display: inline;
+    font-weight: bold;
+}
+
+#sub-title {
+    padding: 2px;
+    margin: 2px 15px;
+    color: #bababa;
+}
+
+
+/* Main document section  */
+
+#main-doc {
+    position: absolute;
+    padding: 20px;
+    margin: 0px 140px 110px 334px;
+    /* width: 100%; */
+
+}
+
+#main-doc header {
+    text-align: left;
+    color: #141616;
+    margin: 2px 13px;
+    font-size: 2em;
+    display: block;
+    padding-top: 15px;
+}
+
+
+/* Section and article  */
+
+section article {
+    color: #4d4e53;
+    margin: 14px;
+    font-size: 0.96em;
+    line-height: 1.5em;
+}
+
+section ul {
+    margin-left: 22px;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+article {
+    display: block;
+}
+
+.paragraph {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.7em;
+    background-color: #ebebeb;
+    padding: 2px 24px;
+    margin: 10px;
+    border-radius: 14px;
+    font-family: monospace;
+    color: #141616;
+}
+
+ol {
+    margin-left: 22px;
+}
+
+/* Utility classes  */
+
+.text-margin {
+    margin: 0.7em 0px;
+}
+
+.bold {
+    font-weight: bold;
+    margin: 0.7em 0px;
+}
+
+/* Media query  */
+
+@media only screen and (max-width: 665px){
+    #main-doc header {
+        margin: 1px 10px;
+        font-size: 1em;
+        padding-top: 10px;
+}
+
+}

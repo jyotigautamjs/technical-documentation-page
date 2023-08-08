@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head starts from here  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Body starts from here  -->
+
+<body>
+
+    <!-- Navigation bar  -->
+
+    <nav id="navbar">
+        <div id="page-title">
+
+            <!-- Logo  -->
+
+            <img src="images/logo.png" alt="Java logo" id="logo">
+
+            <!-- Page title  -->
+
+            <header id="title">Java</header>
+            <p id="sub-title">Technical Documentation</p>
+        </div>
+
+        <!-- Navigation menu lists  -->
+
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction_to_Java">Introduction to Java</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Java_Development_Environment">Java Development Environment
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Basic_Syntax">Basic Syntax</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Data_Types">Data Types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Variables">Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Control_Structures">Control Structures</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Exception_Handling">Exception Handling</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Input_and_Output">Input and Output</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Collections_Framework">Collections Framework</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Multithreading">Multithreading</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#File_Handling">File Handling</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Java_Database_Connectivity_(JDBC)">Java Database Connectivity (JDBC)</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Tools_and_Libraries">Tools and Libraries</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#References">References</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main document section starts from here  -->
+
+    <main id="main-doc">
+
+        <!-- Introduction to Java  -->
+
+        <section class="main-section" id="Introduction_to_Java">
+            <header>Introduction to Java</header>
+            <article>
+                <p>
+                    Java is a versatile, high-level, object-oriented programming language that was developed by Sun
+                    Microsystems in the mid-1990s. It was designed with the goal of being platform-independent, allowing
+                    developers to write code that can run on any device or operating system without modification. This
+                    unique feature is achieved through the use of the Java Virtual Machine (JVM), which interprets Java
+                    bytecode and translates it into machine-specific instructions at runtime. </p>
+                <div>
+                    <p class="text-margin">Here are some key features of Java:</p>
+                    <ol>
+                        <li><span class="bold">Platform Independence: </span>Java's code can run on any system with a
+                            Java Virtual
+                            Machine (JVM), ensuring cross-platform compatibility.</li>
+                        <li><span class="bold">Object-Oriented:</span>Java emphasizes using classes and objects for
+                            better code
+                            organization and reusability.</li>
+
+
+                        <li><span class="bold">Rich Standard Library:</span>Java offers a comprehensive collection of
+                            classes and
+                            packages for various tasks, saving development time.</li>
+                        <li><span class="bold">Multi-Threaded:</span>Java supports concurrent execution with
+                            multithreading,
+                            enhancing performance and responsiveness.</li>
+                        <li><span class="bold">Security:</span>Java's architecture includes built-in security features,
+                            making it
+                            suitable for secure application development.</li>
+                        <li><span class="bold">Robust and Reliable:</span>Java's error handling mechanisms and strict
+                            checking
+                            contribute to stable and crash-resistant programs.</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+
+        <!-- Java Development Environment  -->
+
+        <section class="main-section" id="Java_Development_Environment">
+            <header>Java Development Environment</header>
+            <article>
+                <p>The Java development environment provides the tools and resources needed to write, compile, and run
+                    Java programs. It typically consists of the following components:</p>
+                <ol>
+                    <li class="bold">Java Development Kit (JDK):</li>
+                    <ul>
+                        <li>Includes the Java compiler ('javac') for converting source code into bytecode.</li>
+                        <li>Provides runtime libraries and tools required for Java application development.</li>
+                        <li>Contains the Java Runtime Environment (JRE), which includes the Java Virtual Machine (JVM)
+                            for executing Java programs.</li>
+                    </ul>
+
+                    <li class="bold">Integrated Development Environment (IDE):</li>
+                    <ul>
+                        <li>Offers a user-friendly environment for coding, debugging, and managing projects.</li>
+                        <li>IDEs like Eclipse, IntelliJ IDEA, and NetBeans provide features like code completion, syntax
+                            highlighting, and debugging tools.</li>
+                        <li>Simplifies tasks like project organization, version control, and library management.</li>
+                    </ul>
+
+                    <li class="bold">Code Editor:</li>
+                    <ul>
+                        <li>A text editor for writing Java code manually.</li>
+                        <li>Provides syntax highlighting and basic code analysis.</li>
+                    </ul>
+
+                    <li class="bold">Build Tools:</li>
+                    <ul>
+                        <li>Tools like Apache Maven and Gradle help manage dependencies, compile code, and package
+                            applications.</li>
+
+                    </ul>
+
+                    <li class="bold">Version Control:</li>
+                    <ul>
+                        <li>Software like Git allows tracking changes in code, collaborating with team members, and
+                            managing source code history.</li>
+
+                    </ul>
+
+                    <li class="bold">Debugger:</li>
+                    <ul>
+                        <li>IDEs come with built-in debuggers to identify and fix errors in code step by step.</li>
+
+                    </ul>
+
+                    <li class="bold">Testing Frameworks:</li>
+                    <ul>
+                        <li>Tools like JUnit and TestNG facilitate automated testing, ensuring code correctness.</li>
+
+                    </ul>
+
+                    <li class="bold">Documentation Tools:</li>
+                    <ul>
+                        <li>JavaDoc generates documentation from code comments, aiding in understanding code usage and
+                            APIs.</li>
+
+                    </ul>
+
+                    <li class="bold">Libraries and APIs:</li>
+                    <ul>
+                        <li>Java's standard library provides pre-built classes and functions for various tasks.</li>
+                        <li>Third-party libraries and frameworks extend functionality and accelerate development.</li>
+                    </ul>
+
+                    <li class="bold">Compiler and Runtime:</li>
+                    <ul>
+                        <li>The JDK includes the Java compiler ('javac') for converting source code into bytecode.</li>
+                        <li>The JRE contains the JVM, which interprets bytecode or converts it to native machine code
+                            for execution.</li>
+                    </ul>
+                </ol>
+                <p class="text-margin">A well-configured Java development environment simplifies the software
+                    development process, enhances
+                    productivity, and enables the creation of efficient and reliable Java applications.</p>
+            </article>
+        </section>
+
+        <!-- Basic Syntax  -->
+
+        <section class="main-section" id="Basic_Syntax">
+            <header>Basic Syntax</header>
+            <article>
+                <p>Java syntax is similar to C++ and C. A Java program consists of classes and methods. The entry point
+                    for execution is the public static void main(String[] args) method.</p>
+                <code>
+                    <p>public class HelloWorld {
+                        public static void main(String[] args) {
+                            System.out.println("Hello, World!");
+                        }
+                    }
+                </p>
+                </code>
+            </article>
+        </section>
+
+        <!-- Data Types  -->
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <div>
+                    <p>In Java, data types define the kinds of values that variables can hold. Java provides both
+                        primitive data types and reference data types. Here's an overview of the data types in Java:</p>
+
+                    <h4 class="text-margin">Primitive Data Types:</h4>
+                    <ol>
+                        <li><span>byte:</span>8-bit signed integer. Range: -128 to 127.</li>
+                        <li><span>short:</span>16-bit signed integer. Range: -32,768 to 32,767.</li>
+                        <li><span>int:</span>32-bit signed integer. Range: -2^31 to 2^31 - 1.</li>
+                        <li><span>long:</span>64-bit signed integer. Range: -2^63 to 2^63 - 1.</li>
+                        <li><span>float:</span>32-bit single-precision floating-point. Used for decimal values.</li>
+                        <li><span>double:</span>64-bit double-precision floating-point. Used for decimal values.</li>
+                        <li><span>char:</span>16-bit Unicode character. Represents a single character.</li>
+                        <li><span>boolean:</span>Represents 'true' or 'false' values.</li>
+                    </ol>
+
+                    <h4 class="text-margin">Reference Data Types:</h4>
+                    <p>Reference data types are used to create objects and manipulate their references:</p>
+                    <ol>
+                        <li><span class="bold">Classes:</span>User-defined data types that define object structure and
+                            behavior.</li>
+                        <li><span class="bold">Interfaces:</span>Define a contract for implementing classes.</li>
+                        <li><span class="bold">Arrays:</span>Ordered collection of elements of the same data type.</li>
+                        <li><span class="bold">Enums:</span>Define a set of named constants.</li>
+                    </ol>
+
+                </div>
+
+            </article>
+        </section>
+
+
+        <!-- Variables  -->
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <div>
+                    <p>Variables store different types of data, and their values can change during program execution.
+                        This flexibility makes them essential for storing and manipulating data in Java programs.</p>
+                    <p class="text-margin">Let's take a closer look at different types of variables:</p>
+                    <ol>
+                        <li>
+                            <p class="bold">Integer Variable (int):</p>
+                            <p>An 'int' variable stores whole numbers (integers).</p>
+                            <p>Example:</p>
+                            <code>
+                                <p>int age = 30;  // Stores the value 30</p>
+                            </code>
+                        </li>
+                        <li>
+                            <p class="bold">Floating-Point Variable (double):</p>
+                            <p>A 'double' variable stores decimal numbers with higher precision.</p>
+                            <p>Example:</p>
+                            <code>
+                                <p>int age = 30;  // Stores the value 30</p>
+                            </code>
+                        </li>
+                        <li>
+                            <p class="bold">Character Variable (char):</p>
+                            <p>A 'char' variable stores a single Unicode character.</p>
+                            <p>Example:</p>
+                            <code>
+                                <p>int age = 30;  // Stores the value 30</p>
+                            </code>
+                        </li>
+                        <li>
+                            <p class="bold">Boolean Variable (boolean):</p>
+                            <p>A 'boolean' variable stores either 'true' or 'false'.</p>
+                            <p>Example:</p>
+                            <code>
+                                <p>boolean isStudent = true;  // Stores the value true</p>
+                            </code>
+                        </li>
+                        <li>
+                            <p class="bold">String Variable (String):</p>
+                            <p>A 'String' variable stores sequences of characters (text).</p>
+                            <p>Example:</p>
+                            <code>
+                                <p>String name = "John";  // Stores the text "John"</p>
+                            </code>
+                        </li>
+                    </ol>
+
+                </div>
+
+            </article>
+        </section>
+
+
+        <!-- Control Structures  -->
+
+        <section class="main-section" id="Control_Structures">
+            <header>Control Structures</header>
+            <article>
+                <p>In Java, a control structure is a block of code that determines the order in which statements are
+                    executed based on specific conditions. Control structures enable you to create programs that make
+                    decisions, perform repetitive tasks, and respond to various scenarios. Java offers three main types
+                    of control structures:</p>
+                <ol>
+                    <li>
+                        <p class="bold">Sequential Control:</p>
+                        <p>Sequential control structures execute statements in the order they appear in the code, from
+                            top to bottom. This is the default behavior of most programming languages.</p>
+                        <p>Example:</p>
+                        <code>
+                                <p>int x = 5;
+                                    int y = 10;
+                                    int sum = x + y;
+                                    System.out.println("Sum: " + sum);
+                                </p>
+                            </code>
+                    </li>
+                    <li>
+                        <p class="bold">Selection (Conditional) Control:</p>
+                        <p>Selection control structures allow your program to choose different paths based on the
+                            outcome of a condition. The most common selection structures are the 'if', 'if-else', and
+                            'switch' statements.</p>
+                        <ul>
+                            <li>
+                                <p class="bold">if Statement:</p>
+                                <code>
+                                    <p>int age = 18;
+                                        if (age >= 18) {
+                                            System.out.println("You are an adult.");
+                                        }                                        
+                                    </p>
+                                </code>
+                            </li>
+                            <li>
+                                <p class="bold">if-else Statement:></p>
+                                <code>
+                                    <p>int score = 75;
+                                        if (score >= 60) {
+                                 <p>           System.out.println("You passed.");
+                                        } else {
+                                            System.out.println("You failed.");
+                                        }                                       
+                                    </p>
+                                </code>
+                            </li>
+                            <li>
+                                <p class="bold">switch Statement:</p>
+                                <code>
+                                    <p>int day = 3;
+                                        switch (day) {
+                                            case 1:
+                                                System.out.println("Monday");
+                                                break;
+                                            case 2:
+                                                System.out.println("Tuesday");
+                                                break;
+                                            // ...
+                                            default:
+                                                System.out.println("Invalid day");
+                                        }                                       
+                                    </p>
+                                </code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="bold">Repetition (Looping) Control:</p>
+                        <p>Repetition control structures enable you to repeat a set of statements multiple times. Java
+                            supports 'for', 'while', and 'do-while' loops.</p>
+                        <ul>
+                            <li>
+                                <p class="bold">for Loop:</p>
+                                <code>
+                                    <p>for (int i = 0; i &lt; 5; i++) {
+                                        System.out.println("Iteration: " + i);
+                                    }                                       
+                                    </p>
+                                </code>
+                            </li>
+                            <li>
+                                <p class="bold">while Loop:</p>
+                                <code>
+                                    <p>int count = 0;
+                                        while (count &lt; 3) {
+                                            System.out.println("Count: " + count);
+                                            count++;
+                                        }                                       
+                                    </p>
+                                </code>
+                            </li>
+                            <li>
+                                <p class="bold">do-while Loop:</p>
+                                <code>
+                                    <p>int num = 1;
+                                        do {
+                                            System.out.println("Number: " + num);
+                                            num++;
+                                        } while (num &lt;= 5);                                       
+                                    </p>
+                                </code>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </article>
+        </section>
+
+        <!-- Object Oriented Programming  -->
+
+        <section class="main-section" id="Object_Oriented_Programming">
+            <header>Object Oriented Programming</header>
+            <article>
+
+                <p>
+                    Java is object-oriented, emphasizing classes and objects. It supports concepts like encapsulation,
+                    inheritance, and polymorphism.
+                </p>
+                <code>
+                    <p>class Animal {
+                        void makeSound() {
+                            System.out.println("Animal makes a sound");
+                        }
+                    }
+                    
+                    class Dog extends Animal {
+                        void makeSound() {
+                            System.out.println("Dog barks");
+                        }
+                    }</p>
+                  </code>
+            </article>
+        </section>
+
+        <!-- Exception Handling  -->
+
+        <section class="main-section" id="Exception_Handling">
+            <header>Exception Handling</header>
+            <article>
+                <p>Exception handling in programming refers to the practice of managing and responding to unexpected or
+                    exceptional situations that can occur during program execution. These situations, called exceptions,
+                    might include errors, invalid inputs, or other conditions that disrupt the normal flow of the
+                    program. Exception handling allows developers to gracefully manage such situations to prevent
+                    crashes or unintended behavior.</p>
+                <p class="text-margin">Java provides a robust exception handling mechanism to handle runtime errors. It
+                    uses try, catch,
+                    finally, and throw statements.</p>
+                <p>Here's a simple example of exception handling in Java:
+                </p>
+                <code>
+                    <p>public class ExceptionHandlingExample {
+                        public static void main(String[] args) {
+                            try {
+                                int result = divide(10, 0); // This will throw an ArithmeticException
+                                System.out.println("Result: " + result);
+                            } catch (ArithmeticException e) {
+                                System.out.println("An error occurred: " + e.getMessage());
+                            } finally {
+                                System.out.println("Cleanup code here.");
+                            }
+                        }
+                        
+                        public static int divide(int dividend, int divisor) {
+                            return dividend / divisor;
+                        }
+                    }
+                    </p>
+                  </code>
+
+                <p>In this example, the program attempts to divide by zero, which causes an ArithmeticException. The
+                    exception is caught in the catch block, preventing the program from crashing. The finally block
+                    executes regardless of whether an exception occurred, allowing cleanup tasks to be performed.</p>
+
+            </article>
+        </section>
+
+        <!-- Input and Output  -->
+
+        <section class="main-section" id="Input_and_Output">
+            <header>Input and Output</header>
+            <article>
+                <p>Input and output (I/O) operations are essential for interacting with users and external resources in
+                    Java applications. Java provides a variety of classes and methods to handle input and output
+                    efficiently. There are two main types of I/O: standard console I/O and file I/O.</p>
+
+                <!-- Standard console input and output  -->
+
+                <h4 class="text-margin">Standard Console Input and Output:</h4>
+                <p>Java's 'System' class provides access to standard input ('System.in') and standard output
+                    ('System.out') streams. These are used to interact with the console.</p>
+
+                <p class="bold">Standard Output ('System.out'):</p>
+                <p>Used to display output on the console.</p>
+                <code>
+                    <p>System.out.println("Hello, World!"); // Outputs "Hello, World!"</p>
+                </code>
+
+                <p class="bold">Standard Input ('System.in'):</p>
+                <p>Used to read input from the console. You can use the Scanner class for more convenient input reading.
+                </p>
+                <code>
+                    <p>import java.util.Scanner;
+
+                        public class ConsoleInputExample {
+                            public static void main(String[] args) {
+                                Scanner scanner = new Scanner(System.in);
+                                
+                                System.out.print("Enter your name: ");
+                                String name = scanner.nextLine(); // Reads a line of text input
+                                
+                                System.out.println("Hello, " + name + "!");
+                                
+                                scanner.close(); // Close the scanner to release resources
+                            }
+                        }
+                    </p>
+                </code>
+
+                <!-- File input and output  -->
+
+                <h4 class="text-margin">File Input and Output:</h4>
+                <p>Java provides classes like 'File', 'FileInputStream', 'FileOutputStream', 'BufferedReader', and
+                    'BufferedWriter' to perform file I/O operations.</p>
+
+                <p class="text-margin">File Output ('FileOutputStream' and 'BufferedWriter'):</p>
+                <p>Used to write data to a file.</p>
+                <code>
+                    <p>import java.io.*;
+
+                        public class FileOutputExample {
+                            public static void main(String[] args) {
+                                try {
+                                    BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
+                                    writer.write("Hello, File I/O!");
+                                    writer.close();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    </p>
+                </code>
+
+                <p class="text-margin">File Input ('FileInputStream' and 'BufferedReader'):</p>
+                <p>Used to read data from a file.</p>
+                <code>
+                    <p>import java.io.*;
+
+                        public class FileInputExample {
+                            public static void main(String[] args) {
+                                try {
+                                    BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
+                                    String line = reader.readLine(); // Reads a line from the file
+                                    System.out.println(line);
+                                    reader.close();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    </p>
+                </code>
+
+
+            </article>
+        </section>
+
+        <!-- Collections Framework  -->
+
+        <section class="main-section" id="Collections_Framework">
+            <header>Collections Framework</header>
+            <article>
+                <p>The Java Collections Framework is a built-in library that provides a set of interfaces, classes, and
+                    algorithms to manage and manipulate collections of objects. Collections are used to store, organize,
+                    and manipulate groups of related objects, such as lists of items, sets of unique elements, and
+                    mappings of keys to values. The framework simplifies common operations like adding, removing,
+                    searching, and sorting elements within collections.</p>
+                <p class="text-margin">Here's a simple example demonstrating the usage of the Java Collections
+                    Framework:</p>
+                <code>
+                    <p>import java.util.*;
+
+                        public class CollectionsExample {
+                            public static void main(String[] args) {
+                                List<String> names = new ArrayList<>();
+                                names.add("Alice");
+                                names.add("Bob");
+                                names.add("Charlie");
+                                
+                                System.out.println("Original list: " + names);
+                                
+                                Collections.sort(names); // Sort the list
+                                
+                                System.out.println("Sorted list: " + names);
+                                
+                                Set<Integer> numbers = new HashSet<>();
+                                numbers.add(5);
+                                numbers.add(10);
+                                numbers.add(5); // Duplicate elements are ignored
+                                
+                                System.out.println("Set of numbers: " + numbers);
+                                
+                                Map<String, Integer> ages = new HashMap<>();
+                                ages.put("Alice", 25);
+                                ages.put("Bob", 30);
+                                
+                                System.out.println("Ages: " + ages);
+                            }
+                        }
+                        </p>
+                  </code>
+            </article>
+        </section>
+
+        <!-- Multithreading  -->
+
+        <section class="main-section" id="Multithreading">
+            <header>Multithreading</header>
+            <article>
+                <p>Multithreading in Java refers to the capability of a program to execute multiple threads (smaller
+                    units of a program) concurrently, allowing tasks to be executed in parallel. This enables efficient
+                    utilization of system resources and better responsiveness in applications that involve tasks that
+                    can be executed concurrently. Java provides a rich set of features and classes for multithreading.
+                </p>
+                <p class="text-margin">Here's an overview of multithreading in Java:</p>
+                <ol>
+                    <li>Thread Class and Runnable Interface:
+                        <ul>
+                            <li>The 'Thread' class represents a thread of execution. You can create a new thread by
+                                extending the 'Thread' class or implementing the 'Runnable' interface.</li>
+                            <li>Implementing 'Runnable' is often preferred because it allows better separation of
+                                concerns and avoids the limitations of single inheritance.</li>
+                        </ul>
+                    </li>
+
+                    <li>Creating Threads:
+                        <ul>
+                            <li>Using 'Thread' class:
+                                <code>
+                                    <p>Thread thread = new MyThread();
+                                        thread.start(); // Start the thread</p>
+                                </code>
+                            </li>
+                            <li>Using Runnable interface:
+                                <code>
+                                    <p>Runnable runnable = new MyRunnable();
+                                        Thread thread = new Thread(runnable);
+                                        thread.start();
+                                    </p>
+                                </code>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>Thread States:
+                        <ul>
+                            <li>Threads have different states, such as 'NEW', 'RUNNABLE', 'BLOCKED', 'WAITING',
+                                'TIMED_WAITING', and 'TERMINATED'.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <!-- Example  -->
+
+                <p>Example:</p>
+                <code>
+                    <p>
+                        public class MultithreadingExample {
+                            public static void main(String[] args) {
+                                Runnable task = () -> {
+                                    for (int i = 1; i <= 5; i++) {
+                                        System.out.println(Thread.currentThread().getName() + ": " + i);
+                                    }
+                                };
+                        
+                                Thread thread1 = new Thread(task, "Thread 1");
+                                Thread thread2 = new Thread(task, "Thread 2");
+                        
+                                thread1.start();
+                                thread2.start();
+                            }
+                        }
+                        In this example, two threads (Thread 1 and Thread 2) run the same task concurrently. They print numbers from 1 to 5. Multithreading improves performance by utilizing available CPU cores efficiently and enables tasks to execute in parallel.
+                    </p>
+                </code>
+                <p>In this example, two threads ('Thread 1' and 'Thread 2') run the same task concurrently. They print
+                    numbers from 1 to 5.</p>
+
+            </article>
+        </section>
+
+        <!-- File Handling  -->
+
+        <section class="main-section" id="File_Handling">
+            <header>File Handling</header>
+            <article>
+                <p>File handling in Java involves reading and writing data from and to files. Java provides classes and
+                    methods to perform file-related operations efficiently</p>
+                <p class="text-margin">Key classes include 'File', 'FileInputStream', 'FileOutputStream', 'FileReader',
+                    and 'FileWriter'.
+                    For reading, you can use 'BufferedReader' for efficient line reading. For writing, 'BufferedWriter'
+                    enhances performance.</p>
+                <p class="text-margin">Example:</p>
+                <code>
+                        <p>import java.io.*;
+
+                            try (BufferedReader reader = new BufferedReader(new FileReader("file.txt"))) {
+                                String line;
+                                while ((line = reader.readLine()) != null) {
+                                    System.out.println(line);
+                                }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }</p>
+                      </code>
+            </article>
+        </section>
+
+        <!-- Java Database Connectivity (JDBC)  -->
+
+        <section class="main-section" id="Java_Database_Connectivity_(JDBC)">
+            <header>Java Database Connectivity (JDBC)</header>
+            <article>
+                <p>Java Database Connectivity (JDBC) is a Java-based framework that provides a standard interface for
+                    connecting Java applications to relational databases.</p>
+                <p class="text-margin">JDBC allows developers to interact with databases, execute SQL queries, and
+                    perform various database
+                    operations using Java code. It acts as a bridge between Java applications and different database
+                    management systems (DBMS), enabling seamless communication and data manipulation.</p>
+                <p class="text-margin">Example:</p>
+                <code>
+                        <p>import java.sql.*;
+
+                            try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/mydb", "user", "password")) {
+                                Statement statement = conn.createStatement();
+                                ResultSet resultSet = statement.executeQuery("SELECT * FROM employees");
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }</p>
+                      </code>
+            </article>
+        </section>
+
+        <!-- Tools and Libraries  -->
+
+        <section class="main-section" id="Tools_and_Libraries">
+            <header>Tools and Libraries</header>
+            <article>
+
+                <ul>
+                    <li>Build tools: Apache Maven, Gradle
+                    </li>
+                    <li>Testing: JUnit, TestNG
+                    </li>
+                    <li>Logging: Log4j, SLF4J
+                    </li>
+                    <li>Web frameworks: Spring, JavaEE
+                    </li>
+                </ul>
+
+            </article>
+        </section>
+
+        <!-- References  -->
+
+        <section class="main-section" id="References">
+            <header>References</header>
+            <article>
+                <ul>
+                    <li>
+                        Official Java Documentation
+                    </li>
+                    <li>
+                        Java Tutorials
+                    </li>
+                    <li>
+                        Java Programming for Beginners
+                    </li>
+                    <li>
+                        Effective Java by Joshua Bloch
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
